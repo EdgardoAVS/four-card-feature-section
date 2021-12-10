@@ -1,0 +1,85 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.main {
+  text-align: center;
+  margin: 80px 0 60px;
+
+}
+.main h1 {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+  line-height: 34px;
+  margin-bottom: 16px;
+}
+.main h1 span {
+  display: block;
+  font-weight: bold;
+}
+.main p {
+  font-size: 16px;
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--very-dark-blue);
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 14px;
+  color: var(--grayish-blue);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.card img {
+  display: flex;
+  align-self: flex-end;
+  width: 60px;
+}
+.supervisor {
+  border-top: 3.5px solid var(--cyan);
+}
+.team-builder {
+  border-top: 3.5px solid var(--red);
+}
+.karma {
+  border-top: 3.5px solid var(--orange);
+}
+.calculator {
+  border-top: 3.5px solid var(--blue);
+}
